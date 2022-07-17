@@ -1,0 +1,24 @@
+.home {
+    background: linear-gradient(#fff, #d1fffe);
+}
+
+.home-body {
+    width: 90%;
+    height: 100vh;
+    margin-left: 5%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-body h1 {
+    font-size: calc(20px + (60 - 20) * (100vw - 320px) / (1920 - 320));
+    font-weight: 600;
+}
+
+.home-body h5 {
+    font-size: calc(15px + (20 - 15) * (100vw - 320px) / (1920 - 320));
+    color: rgb(49, 49, 49);
+    margin-top: 18px;
+}

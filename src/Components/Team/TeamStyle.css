@@ -1,0 +1,74 @@
+.full-team {
+    background-color: #ececec;
+}
+
+.team {
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+.team h1 {
+    text-align: center;
+    padding: 100px 0;
+    font-size: calc(20px + (40 - 20) * (100vw - 320px) / (1920 - 320));
+    font-weight: 600;
+}
+
+.team-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.team-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+}
+
+.team-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 5px solid #006362;
+}
+
+.team-card h2 {
+    font-size: calc(20px + (25 - 20) * (100vw - 320px) / (1920 - 320));
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.team-card p {
+    font-size: calc(15px + (17 - 15) * (100vw - 320px) / (1920 - 320));
+}
+
+
+
+
+
+
+
+/*=============== MEDIA QUERIES ===============*/
+
+@media screen and (max-width:600px) {
+    .team-cards {
+        grid-template-columns: 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .team-cards {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        padding-bottom: 2rem;
+    }
+}

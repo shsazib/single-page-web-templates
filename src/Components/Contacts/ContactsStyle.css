@@ -1,0 +1,71 @@
+.contacts-container {
+    background-color: #000;
+    color: #9c9c9c;
+    padding: 100px 0;
+}
+
+.contacts {
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.sIcon {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.icon {
+    margin: 8px;
+    cursor: pointer;
+    color: #9c9c9c;
+}
+
+.icon:hover {
+    color: #006362;
+}
+
+.icon:nth-child(1) {
+    margin-left: 0px;
+}
+
+.demo img {
+    width: 120px;
+}
+
+.demo p {
+    padding-top: 20px;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+
+
+
+/*=============== MEDIA QUERIES ===============*/
+
+@media screen and (max-width: 600px) {
+    .contacts {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .contacts {
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1050px) {
+    .contacts {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+}

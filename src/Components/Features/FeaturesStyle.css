@@ -1,0 +1,52 @@
+.feature {
+    background-color: #ececec;
+}
+
+.all-features {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.all-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 100px 0;
+}
+
+.features {
+    display: flex;
+    margin: 5px;
+}
+
+.features .icon {
+    font-size: 45px;
+    color: #006362;
+    margin-right: 10px;
+}
+
+
+
+
+
+/*=============== MEDIA QUERIES ===============*/
+
+@media screen and (max-width:500px) {
+    .all-features {
+        grid-template-columns: 1fr;
+        padding: 40px 0;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:750px) {
+    .all-features {
+        grid-template-columns: 1fr 1fr;
+        padding: 50px 0;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width:950px) {
+    .all-features {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 60px 0;
+    }
+}
